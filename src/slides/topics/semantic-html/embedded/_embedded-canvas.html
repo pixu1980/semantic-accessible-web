@@ -1,0 +1,39 @@
+<section>
+  <small>
+    <p balance>
+      <mark>&lt;canvas&gt;&lt;/canvas&gt;</mark>: Provides a drawable area for
+      rendering graphics via JavaScript (e.g., games, charts, or animations).
+      Acts as a container; requires scripting to render content.
+    </p>
+  </small>
+  <comparison>
+    <example code class="fragment">
+      <small>canvas.html</small>
+      <pre>
+        <code class="language-html hljs" data-trim data-line-numbers>
+          &lt;canvas id="myCanvas" width="400" height="300"&gt;&lt;/canvas&gt;
+          &lt;script&gt;
+              const canvas = document.getElementById('myCanvas');
+              const ctx = canvas.getContext('2d');
+              ctx.fillStyle = 'blue';
+              ctx.fillRect(50, 50, 100, 100);
+          &lt;/script&gt;
+        </code>
+      </pre>
+    </example>
+    <small class="fragment">
+      <canvas id="myCanvas" width="400" height="300"></canvas>
+      <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(50, 50, 100, 100);
+      </script>
+      <style>
+        #myCanvas {
+          border: 1px solid white;
+        }
+      </style>
+    </small>
+  </comparison>
+</section>

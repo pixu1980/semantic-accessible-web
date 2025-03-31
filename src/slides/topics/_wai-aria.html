@@ -1,0 +1,56 @@
+<section>
+  <section>
+    <h2><mark>What is</mark> WAI-ARIA?</h2>
+    <h3>Web Accessibility Initiative</h3>
+    <h4>Accessible Rich Internet Applications</h4>
+  </section>
+  <section>
+    <p balance>A<mark> set of guidelines</mark> (eg. HTML attributes role and aria-*) to make digital products accessible to people who rely on assistive technologies</p>
+  </section>
+  <section>
+    <h2><mark>What are</mark> ARIA APG?</h2>
+    <h4 balance>Authoring Practices Guide</h4>
+  </section>
+  <section>
+    <p balance>A set of guidelines related to the implementation of <mark>common design patterns and widgets</mark> (eg. Accordion, Breadcrumb, Carousel, Dialog, Landmarks ...)</p>
+  </section>
+  <section>
+    <h3>WAI-ARIA <mark>Examples</mark></h3>
+  </section>
+  <section>
+    <h4>Accessible Pattern: <mark>Alert</mark></h4>
+    <small balance>
+      <p>This will be announced instantly by screen readers, taking precedence above the rest.</p>
+    </small>
+    <pre><code class="hljs html" data-trim data-line-numbers>
+      &lt;div role="alert"&gt;
+        Network error. Please try again.
+      &lt;/div&gt;
+    </code></pre>
+  </section>
+  <section>
+    <h4>Accessible Pattern: <mark>aria-live</mark></h4>
+    <small balance>
+      <p>Perfect for subtle live updates (chat messages, notifications, video subtitles).</p>
+    </small>
+    <pre><code class="hljs html" data-trim data-line-numbers>
+      &lt;div aria-live="polite"&gt;
+        New message...
+      &lt;/div&gt;
+    </code></pre>
+  </section>
+  <section>
+    <h4>Accessible Pattern: <mark>skip link</mark></h4>
+    <small balance>
+      <p>Allows keyboard users to bypass nav elements, straight to the point.</p>
+    </small>
+    <pre><code class="hljs html" data-trim data-line-numbers>
+      &lt;a href="#main" class="skip-link"&gt;
+        Skip to content
+      &lt;/a&gt;
+      &lt;main id="main"&gt;
+        ...
+      &lt;/main&gt;
+    </code></pre>
+  </section>
+</section>

@@ -1,0 +1,65 @@
+<section>
+  <small>
+    <p balance>
+      <mark>&lt;dialog&gt;&lt;/dialog&gt;</mark>: Represents a dialog box or
+      modal window. Used for popups, alerts, or forms requiring focused user
+      interaction.
+    </p>
+  </small>
+  <comparison>
+    <example code>
+      <pre>
+        <code class="language-html hljs" data-trim data-line-numbers>
+          &lt;button id="openDialog"&gt;Open Dialog&lt;/button&gt;
+          &lt;dialog id="myDialog"&gt;
+            &lt;h2&gt;Dialog Title&lt;/h2&gt;
+            &lt;p&gt;
+              This is a modal dialog. You can use it for alerts, confirmations, or
+              any other interaction.
+            &lt;/p&gt;
+            &lt;form method="dialog"&gt;
+              &lt;button type="submit" class="close-btn"&gt;Close&lt;/button&gt;
+            &lt;/form&gt;
+          &lt;/dialog&gt;
+          &lt;script&gt;
+            const dialog = document.getElementById('myDialog');
+            const openButton = document.getElementById('openDialog');
+  
+            openButton.addEventListener('click', () =&gt; {
+              dialog.showModal(); // Open the dialog as a modal
+            });
+  
+            dialog.addEventListener('close', () =&gt; {
+              console.log('Dialog closed with:', dialog.returnValue);
+            });
+          &lt;/script&gt;
+        </code>
+      </pre>
+    </example>
+    <small>
+      <button id="openDialog">Open Dialog</button>
+      <dialog id="myDialog">
+        <h2>Dialog Title</h2>
+        <p>
+          This is a modal dialog. You can use it for alerts, confirmations, or
+          any other interaction.
+        </p>
+        <form method="dialog">
+          <button type="submit" class="close-btn">Close</button>
+        </form>
+      </dialog>
+      <script>
+        const dialog = document.getElementById('myDialog');
+        const openButton = document.getElementById('openDialog');
+
+        openButton.addEventListener('click', () => {
+          dialog.showModal(); // Open the dialog as a modal
+        });
+
+        dialog.addEventListener('close', () => {
+          console.log('Dialog closed with:', dialog.returnValue);
+        });
+      </script>
+    </small>
+  </comparison>
+</section>

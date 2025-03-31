@@ -1,0 +1,39 @@
+<section>
+  <small>
+    <p balance>
+      <mark>&lt;abbr&gt;&lt;/abbr&gt;</mark>: Represents an abbreviation or
+      acronym, often with a <mark>title</mark> attribute for the full term which the user can see hovering the abbr
+    </p>
+    <br>
+    <p balance class="fragment">
+      <mark>&lt;dfn&gt;&lt;/dfn&gt;</mark>: Highlights a term being defined
+    </p>
+  </small>
+  <comparison>
+    <example code class="fragment">
+      <small>abbr-and-dfn.html</small>
+      <pre>
+        <code class="language-html hljs" data-trim data-line-numbers>
+          &lt;p&gt;
+            This text contains an abbreviation of 
+            &lt;abbr title="HyperText Markup Language"&gt;
+              HTML
+            &lt;/abbr&gt;
+          &lt;/p&gt;
+          &lt;p&gt;
+            &lt;dfn&gt;HTML&lt;/dfn&gt; stands for HyperText Markup Language.
+          &lt;/p&gt;
+        </code>
+      </pre>
+    </example>
+    <small class="fragment">
+      <p style="text-align: left">
+        This text contains an abbreviation of
+        <abbr title="HyperText Markup Language">HTML</abbr>
+      </p>
+      <p style="text-align: left">
+        <dfn>HTML</dfn> stands for HyperText Markup Language.
+      </p>
+    </small>
+  </comparison>
+</section>

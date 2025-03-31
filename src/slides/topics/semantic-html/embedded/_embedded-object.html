@@ -1,0 +1,37 @@
+<section>
+  <small>
+    <p balance>
+      <mark>&lt;object&gt;&lt;/object&gt;</mark>: Embeds external resources
+      (e.g., images, videos, or interactive applications) with fallback content
+      if the resource fails to load. Semantics: More flexible than
+      <mark>&lt;embed&gt;</mark>, allowing fallback content.
+    </p>
+  </small>
+  <comparison>
+    <example code class="fragment">
+      <small>object.html</small>
+      <pre>
+        <code class="language-html hljs" data-trim data-line-numbers>
+          &lt;object
+            data="family-guy.gif"
+            type="image/gif"
+            width="300"
+            height="200"
+          &gt;
+            &lt;p&gt;Your browser does not support this content.&lt;/p&gt;
+          &lt;/object&gt;
+        </code>
+      </pre>
+    </example>
+    <small class="fragment">
+      <object
+        data="./assets/family-guy.gif"
+        type="image/gif"
+        width="300"
+        height="200"
+      >
+        <p>Your browser does not support this content.</p>
+      </object>
+    </small>
+  </comparison>
+</section>

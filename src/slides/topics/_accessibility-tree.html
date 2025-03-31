@@ -1,0 +1,91 @@
+<section>
+  <!-- Existing slides (kept unchanged) -->
+
+  <!-- ACCESSIBILITY TREE INTRODUCTION -->
+  <section><h2>What Is the Accessibility Tree?</h2></section>
+  <section><p>The accessibility tree is a subset of the DOM that assistive technologies can access and interpret.</p></section>
+
+  <!-- HOW IT WORKS -->
+  <section><h2>How It Works</h2></section>
+  <section>
+    <p>When the browser parses the DOM, it builds:</p>
+    <ul>
+      <li>The visual rendering tree (what you see)</li>
+      <li>The accessibility tree (what screen readers interpret)</li>
+    </ul>
+  </section>
+
+  <!-- COMPARING DOM AND ACCESSIBILITY TREE -->
+  <section><h2>DOM vs Accessibility Tree</h2></section>
+  <section>
+    <table>
+      <thead>
+        <tr>
+          <th>DOM Tree</th>
+          <th>Accessibility Tree</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>All elements</td>
+          <td>Only relevant elements</td>
+        </tr>
+        <tr>
+          <td>Styling and scripting</td>
+          <td>Semantics and interaction</td>
+        </tr>
+        <tr>
+          <td>Full page content</td>
+          <td>Filtered for accessibility roles</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- INCLUDED ELEMENTS -->
+  <section><h2>What Gets Included?</h2></section>
+  <section>
+    <ul>
+      <li>Semantic HTML elements (e.g., <code>&lt;button&gt;</code>, <code>&lt;nav&gt;</code>)</li>
+      <li>Elements with meaningful roles (<code>role="dialog"</code>)</li>
+      <li>Content with accessible names or labels</li>
+      <li>Focusable and interactive elements</li>
+    </ul>
+  </section>
+
+  <!-- EXCLUDED ELEMENTS -->
+  <section><h2>What Gets Excluded?</h2></section>
+  <section>
+    <ul>
+      <li><code>display: none</code> or <code>visibility: hidden</code></li>
+      <li><code>aria-hidden="true"</code></li>
+      <li>Non-semantic <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code> without role or content</li>
+      <li>Elements without labels, roles, or focus</li>
+    </ul>
+  </section>
+
+  <!-- EXAMPLE COMPARISON -->
+  <section><h2>Example Comparison</h2></section>
+  <section>
+    <pre><code>&lt;div&gt;Hello&lt;/div&gt;
+&lt;button&gt;Submit&lt;/button&gt;
+&lt;div aria-hidden="true"&gt;Hidden info&lt;/div&gt;</code></pre>
+    <p>In the accessibility tree, only the <code>&lt;button&gt;</code> appears.</p>
+  </section>
+
+  <!-- WHY THIS MATTERS -->
+  <section><h2>Why It Matters</h2></section>
+  <section>
+    <p>The accessibility tree is what screen readers "see".<br />If it's not there, it doesn't exist for users who rely on assistive technology.</p>
+  </section>
+
+  <!-- HOW TO DEBUG -->
+  <section><h2>How to Inspect It</h2></section>
+  <section>
+    <ul>
+      <li>Chrome DevTools: Accessibility panel</li>
+      <li>Firefox: Accessibility Inspector</li>
+      <li>axe DevTools browser extension</li>
+    </ul>
+  </section>
+</section>

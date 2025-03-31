@@ -2,64 +2,91 @@
 <html lang="it">
   <head>
     <meta charset="utf-8">
-    <title>Talk Title</title>
+    <title>Semantic Accessible Web</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/talk-template.ebeadb08.css">
+    <link rel="stylesheet" href="semantic-accessible-web.6d9ad803.css">
   </head>
   <body>
     <div class="reveal">
   <div class="slides">
     <section intro="">
-  <h2>
-    This slide acts like a doodle visually resuming the talk
-  </h2>
+  <h2><mark>Semantic</mark> Accessible Web</h2>
+  <h4 class="fragment">combining <mark>Semantic HTML</mark> and <mark>WAI-ARIA APG</mark></h4>
 </section>
 
-<section pixu="">
-  <figure>
-    <picture>
-      <source srcset="/pixu.8dc4bcd7.webp" type="image/webp">
-      <img src="/pixu.8cd71433.jpg" alt="Pixu">
-    </picture>
-  </figure>
-  <h3>Emiliano <mark>Pisu</mark></h3>
-  <p>
-    <mark>Sensei</mark> & Co-Host
-    <br>
-    @ Dev<mark>Dojo</mark> IT
-  </p>
+<section pixu="" data-transition="convex">
+  <comparison>
+    <left>
+      <figure>
+        <picture>
+          <source srcset="pixu.ea6d4c65.webp" type="image/webp">
+          <img src="pixu.06482de6.jpg" alt="Pixu">
+        </picture>
+      </figure>
+      <h3>Emiliano <mark>Pisu</mark></h3>
+      <p>
+        <mark>Sensei</mark> & Co-Host
+        <br>
+        @ Dev <mark>Dojo</mark> IT
+      </p>
+    </left>
+    <right>
+      <h6>
+        <img src="linkedin.e163842b.svg" alt="pixu1980@linkedin">
+        linkedin.com/in/pixu1980
+      </h6>
+      <h6>
+        <img src="github.f35b1939.svg" alt="pixu1980@github">
+        github.com/pixu1980
+      </h6>
+      <h6>
+        <img src="codepen.dd4edd71.svg" alt="pixu1980@codepen">
+        codepen.io/pixu1980
+      </h6>
+      <h6>
+        <img src="linkedin.e163842b.svg" alt="devdojo@linkedin">
+        linkedin.com/company/dev-dojo-it/
+      </h6>
+      <h6>
+        <img src="youtube.31b52153.svg" alt="devdojo@youtube">
+        youtube.com/@devdojo_it
+      </h6>
+      <h6>
+        <img src="twitch.d2696154.svg" alt="devdojo@twitch">
+        twitch.tv/devdojo_it
+      </h6>
+      <h6>
+        <img src="telegram.69de9eff.svg" alt="devdojo@telegram">
+        @devdojo_it
+      </h6>
+    </right>
+  </comparison>
 </section>
 
 <section>
   <section>
-  <h4>Here goes the <mark>main</mark> topic title</h4>
-</section>
-
-<section>
-  <h4>
-    Here goes the main topic description
-  </h4>
-</section>
+    <h3 balance=""><mark>Accessibility</mark> is not an optional feature, <mark>it's a fundamental digital right</mark> for all users.</h3>
+  </section>
+  <section>
+    <h4 balance=""><mark>~15-20% of the global population</mark> has permanent or temporary disability: 1 person out to 5, <mark>which means 1.64B people</mark></h4>
+  </section>
+  <section>
+    <h4>This involves</h4>
+    <ul>
+      <li class="fragment">Visual impairments</li>
+      <li class="fragment">Motor disabilities</li>
+      <li class="fragment">Hearing loss</li>
+      <li class="fragment">Cognitive limitations</li>
+      <li class="fragment">Temporary or situational limitations</li>
+      <li class="fragment">Environmental access challenges</li>
+    </ul>
+  </section>
 </section>
 
 
     <section>
-  <section>
-    <h4>What are we going to <br><mark>talk about</mark> today?</h4>
-  </section>
-<section>
-  <h4>Topic Name</h4>
-  <small>
-    <ul>
-      <li class="fragment">argument 1</li>
-      <li class="fragment">argument 2</li>
-      <li class="fragment">argument 3</li>
-      <li class="fragment">argument 4</li>
-    </ul>
-  </small>
-</section>
-</section>
-
+<!-- <include src="./slides/agenda/_topics.html"></include> -->
+<!-- <include src="./slides/agenda/_meme.html"></include> -->
 <section class="slide-dive-in" data-auto-animate="">
   <div sr-only="" data-menu-title="">Let's dive in</div>
   <dive-in>
@@ -73,122 +100,1368 @@
   </dive-in>
 </section>
 
-
-    <section>
-  <!-- Here goes the talk slides -->
 </section>
 
-    <section>
-  <section data-transition="convex">
-    <h4>Wrapping up</h4>
+    <!-- <include src="./slides/topics/_accessibility-tree.html"></include> -->
+<section>
+  <section>
+    <h2><mark>What is</mark> WAI-ARIA?</h2>
+    <h3>Web Accessibility Initiative</h3>
+    <h4>Accessible Rich Internet Applications</h4>
   </section>
-  <section data-transition="convex">
-    <comparison>
-      <left>
-        <h4>Pros</h4>
-        <small>
-          <ul>
-            <li class="fragment">pro 1</li>
-            <li class="fragment">pro 2</li>
-            <li class="fragment">pro 3</li>
-            <li class="fragment">pro 4</li>
-          </ul>
-        </small>
-      </left>
-      <right>
-        <h4>Cons</h4>
-        <small>
-          <ul>
-            <li class="fragment">con 1</li>
-            <li class="fragment">con 2</li>
-            <li class="fragment">con 3</li>
-            <li class="fragment">con 4</li>
-          </ul>
-        </small>
-      </right>
-    </comparison>
+  <section>
+    <p balance="">A<mark> set of guidelines</mark> (eg. HTML attributes role and aria-*) to make digital products accessible to people who rely on assistive technologies</p>
   </section>
-  <section data-transition="convex">
-    <h4>Conclusions</h4>
+  <section>
+    <h2><mark>What are</mark> ARIA APG?</h2>
+    <h4 balance="">Authoring Practices Guide</h4>
+  </section>
+  <section>
+    <p balance="">A set of guidelines related to the implementation of <mark>common design patterns and widgets</mark> (eg. Accordion, Breadcrumb, Carousel, Dialog, Landmarks ...)</p>
+  </section>
+  <section>
+    <h3>WAI-ARIA <mark>Examples</mark></h3>
+  </section>
+  <section>
+    <h4>Accessible Pattern: <mark>Alert</mark></h4>
+    <small balance="">
+      <p>This will be announced instantly by screen readers, taking precedence above the rest.</p>
+    </small>
+    <pre><code class="hljs html" data-trim="" data-line-numbers="">
+      &lt;div role="alert"&gt;
+        Network error. Please try again.
+      &lt;/div&gt;
+    </code></pre>
+  </section>
+  <section>
+    <h4>Accessible Pattern: <mark>aria-live</mark></h4>
+    <small balance="">
+      <p>Perfect for subtle live updates (chat messages, notifications, video subtitles).</p>
+    </small>
+    <pre><code class="hljs html" data-trim="" data-line-numbers="">
+      &lt;div aria-live="polite"&gt;
+        New message...
+      &lt;/div&gt;
+    </code></pre>
+  </section>
+  <section>
+    <h4>Accessible Pattern: <mark>skip link</mark></h4>
+    <small balance="">
+      <p>Allows keyboard users to bypass nav elements, straight to the point.</p>
+    </small>
+    <pre><code class="hljs html" data-trim="" data-line-numbers="">
+      &lt;a href="#main" class="skip-link"&gt;
+        Skip to content
+      &lt;/a&gt;
+      &lt;main id="main"&gt;
+        ...
+      &lt;/main&gt;
+    </code></pre>
   </section>
 </section>
 
 <section>
-  <!-- <section data-transition="convex">
-  <h4>Slides Links</h4>
-  <comparison links>
-    <figure>
-      <picture>
-        <source srcset="./assets/qrcodes/slides.png?as=webp" type="image/webp" />
-        <img src="./assets/qrcodes/slides.png" alt="Slides" />
-      </picture>
-      <figcaption>
-        <small>Slides</small>
-      </figcaption>
-    </figure>
-    <figure>
-      <picture>
-        <source srcset="./assets/qrcodes/slides-repo.png?as=webp" type="image/webp" />
-        <img src="./assets/qrcodes/slides-repo.png" alt="Slides Repo on Github" />
-      </picture>
-      <figcaption>
-        <small>Slides Repo</small>
-      </figcaption>
-    </figure>
-  </comparison>
-</section> -->
+  <section>
+    <h2><mark>What is</mark> Semantic HTML?</h2>
+  </section>
+  <section>
+  <p>
+    As the word may suggest it adds semantic <mark>meanings</mark> to HTML
+    elements. Which also translates in better <mark>readability</mark> and
+    <mark>maintainability</mark>.
+  </p>
+  <aside class="notes">
+    <small>
+      // TODO: notes https://en.wikipedia.org/wiki/Tim_Berners-Lee
+    </small>
+  </aside>
+</section>
 
-<section data-transition="convex">
-  <h4>Personal Links</h4>
-  <comparison links="">
-    <figure>
-      <picture>
-        <source srcset="/pixu-dev.2695fc16.webp" type="image/webp">
-        <img src="/pixu-dev.eb9169a4.png" alt="Pixu.dev">
-      </picture>
-      <figcaption>
-        <small>pixu.dev</small>
-      </figcaption>
-    </figure>
-    <figure>
-      <picture>
-        <source srcset="/linkedin.64f9af3d.webp" type="image/webp">
-        <img src="/linkedin.70ec7f8e.png" alt="Pixu LinkedIn Profile">
-      </picture>
-      <figcaption>
-        <small>LinkedIn</small>
-      </figcaption>
-    </figure>
+  <section>
+    <p balance="">A long set of HTML elements which provide the <mark>proper semantic meanings</mark> to user agents and screen readers</p>
+  </section>
+  <section>
+  <p balance="">
+    Elements such as <mark>&lt;div&gt;&lt;/div&gt;</mark> or <mark>&lt;span&gt;&lt;/span&gt;</mark> are often used as a <mark>general-purpose</mark> element to create headers, footers, menus, articles
+    and web contents in general.
+  </p>
+</section>
+<section>
+  <h4>An <mark>example</mark>?</h4>
+  <p balance="">
+    <small>
+      Many web-based software contain HTML code like the following to indicate the different areas. This, <mark>except css classes</mark> added to the elements,
+      <mark>tells nothing to browsers</mark> and screen readers about the content.
+    </small>
+  </p>
+  <pre>
+    <code class="hljs html" data-trim="" data-line-numbers="">
+      &lt;div class="header"&gt;&lt;/div&gt;
+      &lt;div class="nav"&gt;&lt;/div&gt;
+      &lt;div class="main"&gt;&lt;/div&gt;
+      &lt;div class="sidebar"&gt;&lt;/div&gt;
+      &lt;div class="footer"&gt;&lt;/div&gt;
+    </code>
+  </pre>
+</section>
+
+  <section>
+  <h3>Let's add some <mark>semantics</mark>??</h3>
+</section>
+<section>
+  <p balance="">
+    Introducing new elements that tells user agents as well as screen readers or search engines
+    <mark>exactly what the element itself does</mark> and <mark>what kind of content should contain</mark>.
+  </p>
+</section>
+<section>
+  <p balance="">These specs allow HTML to present and use web contents in a wide variety of contexts that the author <mark>might not have considered</mark>.</p>
+</section>
+<section>
+  <p balance="">
+    SEO, Google News, Accelerated Mobile Pages (AMP) and all the other
+    <mark>scraping and crawling methods</mark> are the players involved here too.
+  </p>
+</section>
+
+</section>
+<section>
+  <section>
+    <h4>Semantic HTML <mark>Layout</mark></h4>
+  </section>
+  <section>
+    <p balance="">
+      The following is just an <mark>example</mark> of a Semantic HTML layout structure, an example of how <mark>semantics helps</mark> to design, develop and read a web content from the
+      <mark>right perspective</mark>
+    </p>
+  </section>
+  <section>
+    <pre>
+      <code class="hljs html" data-trim="" data-line-numbers="">
+        &lt;header&gt;header&lt;/header&gt;
+        &lt;nav&gt;nav&lt;/nav&gt;
+        &lt;main&gt;
+          main
+          &lt;section&gt;section&lt;/section&gt;
+          &lt;article&gt;article&lt;/article&gt;
+        &lt;/main&gt;
+        &lt;aside&gt;aside&lt;/aside&gt;
+        &lt;footer&gt;footer&lt;/footer&gt;
+      </code>
+    </pre>
+  </section>
+  <section>
+  <p balance="">
+    A <mark>&lt;header&gt;</mark> element represents <br>
+    the principal interaction part of a web content
+  </p>
+  <p note="">
+    NOTE: When used inside an <mark>article</mark> element <br>
+    represents its principal interaction part
+  </p>
+</section>
+<section>
+  <p balance="">A <mark>&lt;header&gt;</mark> typically contains:</p>
+  <small>
+    <ul>
+      <li>brand/logo</li>
+      <li>a set of navigation links</li>
+      <li>user menu/profile</li>
+    </ul>
+  </small>
+</section>
+
+  <section>
+  <p balance="">A <mark>&lt;nav&gt;</mark> represents global or partial navigation links</p>
+  <p note="">NOTE: There can be multiple <mark>nav</mark> elements on a page with different purposes and destinations</p>
+</section>
+<section>
+  <p balance="">A <mark>&lt;nav&gt;</mark> typically is:</p>
+  <small>
+    <ul>
+      <li>mostly intended for major block of navigation links</li>
+      <li>not for containing all the navigation links of the content</li>
+    </ul>
+  </small>
+</section>
+
+  <section>
+  <p balance="">A <mark>&lt;footer&gt;</mark> element represents the last part for a document or a section. This means you can have multiple footer in one HTML document</p>
+  <p note="">
+    NOTE: When used inside an <mark>article</mark> element <br>
+    represents its last interaction part
+  </p>
+</section>
+<section>
+  <p balance="">A <mark>&lt;footer&gt;</mark> typically contains:</p>
+  <small>
+    <ul>
+      <li>related links</li>
+      <li>back to top links</li>
+      <li>contact information</li>
+      <li>copyright/author information</li>
+    </ul>
+  </small>
+</section>
+
+  <section>
+  <p balance="">An <mark>&lt;aside&gt;</mark> element defines some content aside from the content it is placed in, its content should be <mark>indirectly related</mark> to the surrounding content</p>
+</section>
+<section>
+  <p balance="">An <mark>&lt;aside&gt;</mark> typically contains:</p>
+  <small>
+    <ul>
+      <li>Related articles or links</li>
+      <li>Author information or bios</li>
+      <li>Advertisements</li>
+      <li>Widgets (e.g., search, recent posts)</li>
+      <li>Navigation that relates to the current page or section</li>
+    </ul>
+  </small>
+</section>
+
+  <section>
+  <p balance="">
+    The <mark>&lt;main&gt;</mark> element is used to designate <br>
+    the primary content area of a web page.
+  </p>
+  <p note="">NOTE: Ensure there is <mark>only one</mark> main element per page</p>
+</section>
+<section>
+  <p balance="">The <mark>&lt;main&gt;</mark> is intended to improve accessibility and document structure by <mark>clearly indicating</mark> the subject matter of the page.</p>
+</section>
+<section>
+  <p balance="">
+    The <mark>&lt;main&gt;</mark> typically <mark>excludes</mark> content that repeats across multiple pages, such as: headers, navs, sidebars, footers.</p>
+  
+</section>
+
+  <section>
+  <p balance="">A <mark>&lt;section&gt;</mark> element represents a thematic grouping of content, usually with an heading, which is part of a larger document</p>
+</section>
+<section>
+  <p balance="">A <mark>&lt;section&gt;</mark> typically contains:</p>
+  <small>
+    <ul>
+      <li>chapters/summary</li>
+      <li>introduction</li>
+      <li>a group of news/cards</li>
+      <li>contacts info</li>
+      <li>tabbed panels/steps in a process</li>
+    </ul>
+  </small>
+</section>
+
+  <section>
+  <p balance="">A <mark>&lt;article&gt;</mark> element represents a self-contained, reusable piece of content that can stand alone or be distributed independently (picture <mark>Google News</mark>)</p>
+</section>
+<section>
+  <p balance="">A <mark>&lt;article&gt;</mark> typically contains:</p>
+  <small>
+    <ul>
+      <li>product card</li>
+      <li>advertising</li>
+      <li>news/magazine article</li>
+      <li>user comment</li>
+      <li>blog/forum post</li>
+    </ul>
+  </small>
+</section>
+
+  <section>
+  <h4 balance="">What about <mark>nesting</mark> Articles and Sections? Is that <mark>possible</mark>?</h4>
+</section>
+<section>
+  <p>Let's explore <mark>some examples</mark>!</p>
+</section>
+<section>
+  <example code="">
+    <small>section-with-nested-articles.html</small>
+    <pre>
+      <code class="language-html hljs" data-trim="" data-line-numbers="">
+        &lt;section&gt;
+          &lt;h1&gt;Latest News&lt;/h1&gt;
+          &lt;article&gt;
+              &lt;h2&gt;Headline 1&lt;/h2&gt;
+              &lt;p&gt;Content of the first article.&lt;/p&gt;
+          &lt;/article&gt;
+          &lt;article&gt;
+              &lt;h2&gt;Headline 2&lt;/h2&gt;
+              &lt;p&gt;Content of the second article.&lt;/p&gt;
+          &lt;/article&gt;
+        &lt;/section&gt;
+      </code>
+    </pre>
+  </example>
+</section>
+<section>
+  <example code="">
+    <small>article-with-nested-sections.html</small>
+    <pre>
+      <code class="language-html hljs" data-trim="" data-line-numbers="">
+        &lt;article&gt;
+          &lt;h1&gt;Understanding Flexbox&lt;/h1&gt;
+          &lt;section&gt;
+              &lt;h2&gt;Introduction&lt;/h2&gt;
+              &lt;p&gt;Flexbox is a layout model...&lt;/p&gt;
+          &lt;/section&gt;
+          &lt;section&gt;
+              &lt;h2&gt;Examples&lt;/h2&gt;
+              &lt;p&gt;
+                Here are some common use-cases
+                for Flexbox.
+              &lt;/p&gt;
+          &lt;/section&gt;
+        &lt;/article&gt;
+      </code>
+    </pre>
+  </example>
+</section>
+<section>
+  <example code="">
+    <small>article-with-nested-articles.html</small>
+    <pre>
+      <code class="language-html hljs" data-trim="" data-line-numbers="">
+        &lt;article&gt;
+          &lt;h1&gt;Blog Post Title&lt;/h1&gt;
+          &lt;p&gt;Content of the blog post.&lt;/p&gt;
+          &lt;article&gt;
+              &lt;h2&gt;Comment 1&lt;/h2&gt;
+              &lt;p&gt;This is a comment.&lt;/p&gt;
+          &lt;/article&gt;
+          &lt;article&gt;
+              &lt;h2&gt;Comment 2&lt;/h2&gt;
+              &lt;p&gt;This is another comment.&lt;/p&gt;
+          &lt;/article&gt;
+        &lt;/article&gt;
+      </code>
+    </pre>
+  </example>
+</section>
+<section>
+  <example code="">
+    <small>section-with-nested-sections.html</small>
+    <pre>
+      <code class="language-html hljs" data-trim="" data-line-numbers="">
+        &lt;section&gt;
+          &lt;h1&gt;Chapter 1&lt;/h1&gt;
+          &lt;section&gt;
+              &lt;h2&gt;Section 1.1&lt;/h2&gt;
+              &lt;p&gt;Details of section 1.1&lt;/p&gt;
+          &lt;/section&gt;
+          &lt;section&gt;
+              &lt;h2&gt;Section 1.2&lt;/h2&gt;
+              &lt;p&gt;Details of section 1.2&lt;/p&gt;
+          &lt;/section&gt;
+        &lt;/section&gt;
+      </code>
+    </pre>
+  </example>
+</section>
+<section>
+  <p balance="">Can we use the <mark>&lt;article&gt;</mark> and <mark>&lt;section&gt;</mark> definitions to <mark>decide how to nest</mark> them?</p>
+</section>
+<section>
+  <h4><mark>Nope</mark>!</h4>
+</section>
+<section>
+  <p balance="">
+    The HTML specs <mark>does not place any restrictions</mark> on the table about how these elements can be nested. Which means <mark>all of the above examples</mark> are valid and semantically
+    correct, so easy!
+  </p>
+</section>
+
+</section>
+
+<section>
+  <section>
+    <h4><mark>Typographic</mark> Semantic Elements</h4>
+  </section>
+  <section>
+  <small> from <mark>&lt;h1&gt;&lt;/h1&gt;</mark> to <mark>&lt;h6&gt;&lt;/h6&gt;</mark>: Represent headings (title, subtitles, and so on...) for their container </small>
+  <comparison>
+    <example code="" class="fragment">
+      <small>headings.html</small>
+      <pre>
+        <code class="language-html hljs" data-trim="" data-line-numbers="">
+          &lt;h1&gt;Heading 1&lt;/h1&gt;
+          &lt;h2&gt;Heading 2&lt;/h2&gt;
+          &lt;h3&gt;Heading 3&lt;/h3&gt;
+          &lt;h4&gt;Heading 4&lt;/h4&gt;
+          &lt;h5&gt;Heading 5&lt;/h5&gt;
+          &lt;h6&gt;Heading 6&lt;/h6&gt;
+        </code>
+      </pre>
+    </example>
+    <small class="fragment" heading-example="">
+      <style>[heading-example] {
+  & h1 {
+    font-size: 2.986em;
+  }
+
+  & h2 {
+    font-size: 2.488em;
+  }
+
+  & h3 {
+    font-size: 2.074em;
+  }
+
+  & h4 {
+    font-size: 1.728em;
+  }
+
+  & h5 {
+    font-size: 1.44em;
+  }
+
+  & h6 {
+    font-size: 1.2em;
+  }
+}
+</style>
+      <small style="text-align: left">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+      </small>
+    </small>
   </comparison>
 </section>
 
-<section data-transition="convex">
-  <h4>DevDojo Links</h4>
-  <comparison links="">
-    <figure>
-      <picture>
-        <source srcset="/dev-dojo.505dabf9.webp" type="image/webp">
-        <img src="/dev-dojo.a4239a33.png" alt="devdojo.it">
-      </picture>
-      <figcaption>
-        <small>devdojo.it</small>
-      </figcaption>
-    </figure>
-    <figure>
-      <picture>
-        <source srcset="/dev-dojo-linkedin.bb68796f.webp" type="image/webp">
-        <img src="/dev-dojo-linkedin.6fe28649.png" alt="devdojo @ linkedin">
-      </picture>
-      <figcaption>
-        <small>LinkedIn</small>
-      </figcaption>
-    </figure>
+  <section>
+  <small> <mark>&lt;hgroup&gt;&lt;/hgroup&gt;</mark>: Represents the heading stack of a content, which consists of all the h1–h6 element children of the hgroup element </small>
+  <comparison>
+    <example code="" class="fragment">
+      <small>hgroup.html</small>
+      <pre>
+      <code class="language-html hljs" data-trim="" data-line-numbers="">
+        &lt;hgroup&gt;
+          &lt;h1&gt;
+            Understanding the Web
+          &lt;/h1&gt;
+          &lt;h2&gt;
+            The Evolution of HTML
+          &lt;/h2&gt;
+        &lt;/hgroup&gt;
+      </code>
+    </pre>
+    </example>
+    <small class="fragment">
+      <small style="text-align: left">
+        <hgroup>
+          <h1>Understanding the Web</h1>
+          <h2>The Evolution of HTML</h2>
+        </hgroup>
+      </small>
+    </small>
   </comparison>
+</section>
+
+  <section>
+  <small> <mark>&lt;p&gt;&lt;/p&gt;</mark>: Represents a paragraph of text element </small>
+  <comparison>
+    <example code="" class="fragment">
+      <small>paragraph.html</small>
+      <pre>
+      <code class="language-html hljs" data-trim="" data-line-numbers="">
+        &lt;p&gt;
+          Curabitur blandit tempus porttitor.
+          Sed posuere consectetur est at lobortis.
+        &lt;/p&gt;
+      </code>
+    </pre>
+    </example>
+    <small class="fragment">
+      <p style="text-align: left">Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis.</p>
+    </small>
+  </comparison>
+</section>
+
+  <section>
+  <small> <mark>&lt;blockquote&gt;&lt;/blockquote&gt;</mark>: Represents a block of text quoted from an external source </small>
+  <comparison>
+    <example code="" class="fragment">
+      <small>blockquote.html</small>
+      <pre>
+        <code class="language-html hljs" data-trim="" data-line-numbers="">
+          &lt;blockquote&gt;
+            This is an example of a blockquote.
+          &lt;/blockquote&gt;
+        </code>
+      </pre>
+    </example>
+    <small class="fragment">
+      <blockquote>This is an example of a blockquote.</blockquote>
+    </small>
+  </comparison>
+</section>
+
+  <section>
+  <small> <mark>&lt;q&gt;&lt;/q&gt;</mark>: Represents a short inline quotation </small>
+  <comparison>
+    <example code="" class="fragment">
+      <small>quote.html</small>
+      <pre>
+      <code class="language-html hljs" data-trim="" data-line-numbers="">
+        The author stated:
+        &lt;q&gt;
+          I'm happy to announce the next book for the upcoming year!
+        &lt;/q&gt;
+      </code>
+    </pre>
+    </example>
+    <small class="fragment"> The author stated: <q>I'm happy to announce the next book for the upcoming year!</q> </small>
+  </comparison>
+</section>
+
+  <section>
+  <small>
+    <mark>&lt;cite&gt;&lt;/cite&gt;</mark>: Used to cite the title of a work or the reference of a source
+  </small>
+  <comparison>
+    <example code="" class="fragment">
+      <small>cite.html</small>
+      <pre>
+        <code class="language-html hljs" data-trim="" data-line-numbers="">
+          &lt;cite&gt;The Great Gatsby&lt;/cite&gt;
+        </code>
+      </pre>
+    </example>
+    <small class="fragment">
+      <cite>The Great Gatsby</cite>
+    </small>
+  </comparison>
+</section>
+
+  <section>
+  <p>
+    <mark>&lt;strong&gt;&lt;/strong&gt;</mark>: Indicates strong importance, <br>
+    typically rendered in bold.
+  </p>
+  <comparison>
+    <example code="" class="fragment">
+      <small>strong.html</small>
+      <pre>
+      <code class="language-html hljs" data-trim="" data-line-numbers="">
+        &lt;strong&gt;
+          This is a bold text
+        &lt;/strong&gt;
+      </code>
+    </pre>
+    </example>
+    <small class="fragment">
+      <strong>This is a bold text</strong>
+    </small>
+  </comparison>
+  <p note="" class="fragment">NOTE: Don't use <mark>&lt;b&gt;</mark> elements because they don't add any semantic meaning</p>
+</section>
+
+  <section>
+  <small>
+    <p><mark>&lt;em&gt;&lt;/em&gt;</mark>: Indicates emphasis, usually rendered in italics.</p>
+  </small>
+  <comparison>
+    <example code="" class="fragment">
+      <small>emphasis.html</small>
+      <pre>
+      <code class="language-html hljs" data-trim="" data-line-numbers="">
+        &lt;em&gt;
+          This is an italic emphasized text
+        &lt;/em&gt;
+      </code>
+    </pre>
+    </example>
+    <small class="fragment">
+      <em>This is an italic emphasized text</em>
+    </small>
+  </comparison>
+  <p note="" class="fragment">NOTE: Don't use <mark>&lt;i&gt;</mark> elements because they don't add any semantic meaning</p>
+</section>
+
+  <section>
+  <small>
+    <p><mark>&lt;mark&gt;&lt;/mark&gt;</mark>: Highlights text to draw attention to it</p>
+  </small>
+  <comparison>
+    <example code="" class="fragment">
+      <small>mark.html</small>
+      <pre>
+      <code class="language-html hljs" data-trim="" data-line-numbers="">
+        &lt;span&gt;
+        Remember to
+          &lt;mark&gt;
+            check this section
+          &lt;/mark&gt;
+        &lt;/span&gt;
+      </code>
+    </pre>
+    </example>
+    <small class="fragment"> Remember to <mark>check this section</mark> </small>
+  </comparison>
+</section>
+
+  <section>
+  <small>
+    <p><mark>&lt;small&gt;&lt;/small&gt;</mark>: Represents text of lesser importance, often rendered in smaller font</p>
+  </small>
+  <comparison>
+    <example code="" class="fragment">
+      <small>small.html</small>
+      <pre>
+        <code class="language-html hljs" data-trim="" data-line-numbers="">
+          &lt;p&gt;
+            This is a paragraph with some text
+            containing a smaller description
+            &lt;br /&gt;
+            &lt;small&gt;
+              (this is the smaller description)
+            &lt;/small&gt;
+          &lt;/p&gt;
+        </code>
+      </pre>
+    </example>
+    <small class="fragment">
+      <p style="text-align: left">
+        This is a paragraph with some text containing a smaller description
+        <br><small>(this is the smaller description)</small>
+      </p>
+    </small>
+  </comparison>
+</section>
+
+  <section>
+  <small>
+    <p>
+      <mark>&lt;time&gt;&lt;/time&gt;</mark>: Specifies a date or time in a
+      machine-readable format
+    </p>
+  </small>
+  <comparison>
+    <example code="" class="fragment">
+      <small>abbr.html</small>
+      <pre>
+      <code class="language-html hljs" data-trim="" data-line-numbers="">
+        &lt;time datetime="2025-01-21"&gt;
+          January 21, 2025
+        &lt;/time&gt;
+      </code>
+    </pre>
+    </example>
+    <small class="fragment">
+      <time datetime="2025-01-21">January 21, 2025</time>
+    </small>
+  </comparison>
+</section>
+
+  <section>
+  <small>
+    <p>
+      <mark>&lt;kdb&gt;&lt;/kdb&gt;</mark>: Represents user input, such as
+      keyboard or voice commands
+    </p>
+  </small>
+  <comparison>
+    <example code="" class="fragment">
+      <small>kdb.html</small>
+      <pre>
+        <code class="language-html hljs" data-trim="" data-line-numbers="">
+          Press &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;S&lt;/kbd&gt; to save.
+        </code>
+      </pre>
+    </example>
+    <small class="fragment">
+      <p style="text-align: left">
+        Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save.
+      </p>
+    </small>
+  </comparison>
+</section>
+
+  <section>
+  <small>
+    <p balance="">
+      <mark>&lt;abbr&gt;&lt;/abbr&gt;</mark>: Represents an abbreviation or
+      acronym, often with a <mark>title</mark> attribute for the full term which the user can see hovering the abbr
+    </p>
+    <br>
+    <p balance="" class="fragment">
+      <mark>&lt;dfn&gt;&lt;/dfn&gt;</mark>: Highlights a term being defined
+    </p>
+  </small>
+  <comparison>
+    <example code="" class="fragment">
+      <small>abbr-and-dfn.html</small>
+      <pre>
+        <code class="language-html hljs" data-trim="" data-line-numbers="">
+          &lt;p&gt;
+            This text contains an abbreviation of 
+            &lt;abbr title="HyperText Markup Language"&gt;
+              HTML
+            &lt;/abbr&gt;
+          &lt;/p&gt;
+          &lt;p&gt;
+            &lt;dfn&gt;HTML&lt;/dfn&gt; stands for HyperText Markup Language.
+          &lt;/p&gt;
+        </code>
+      </pre>
+    </example>
+    <small class="fragment">
+      <p style="text-align: left">
+        This text contains an abbreviation of
+        <abbr title="HyperText Markup Language">HTML</abbr>
+      </p>
+      <p style="text-align: left">
+        <dfn>HTML</dfn> stands for HyperText Markup Language.
+      </p>
+    </small>
+  </comparison>
+</section>
+
+  <section>
+  <small>
+    <p balance="">
+      <mark>&lt;ins&gt;&lt;/ins&gt;</mark>: Represents text that has been
+      inserted into a document. The <mark>datetime</mark> attribute can be used
+      to specify the date and time of the insertion.
+    </p>
+    <br>
+    <p balance="" class="fragment">
+      <mark>&lt;del&gt;&lt;/del&gt;</mark>: Represents text that has been
+      deleted from a document. The <mark>datetime</mark> attribute can also be
+      used here to specify when the text was removed.
+    </p>
+  </small>
+  <comparison>
+    <example code="" class="fragment">
+      <small>ins-and-del.html</small>
+      <pre>
+        <code class="language-html hljs" data-trim="" data-line-numbers="">
+          &lt;p&gt;
+            The price is 
+            &lt;del datetime="2025-01-15"&gt;$50&lt;/del&gt;
+            &lt;ins datetime="2025-01-16"&gt;$40&lt;/ins&gt;
+          &lt;/p&gt;
+        </code>
+      </pre>
+    </example>
+    <small class="fragment">
+      <p>
+        The price is
+        <del datetime="2025-01-15">$50</del>
+        <ins datetime="2025-01-16">$40</ins>
+      </p>
+    </small>
+  </comparison>
+</section>
+
+  <section>
+  <small>
+    <p balance="">
+      <mark>&lt;sub&gt;&lt;/sub&gt;</mark>: Represents text that should be<br>
+      displayed as subscript.
+    </p>
+    <br>
+    <p balance="" class="fragment">
+      <mark>&lt;sup&gt;&lt;/sup&gt;</mark>: Represents text that should be<br>
+      displayed as superscript.
+    </p>
+  </small>
+  <comparison>
+    <example code="" class="fragment">
+      <small>sub-and-sup.html</small>
+      <pre>
+        <code class="language-html hljs" data-trim="" data-line-numbers="">
+          water = H<sub>2</sub>O
+          <br>
+          y = x<sup>2</sup>
+        </code>
+      </pre>
+    </example>
+    <div class="fragment">
+      water = H<sub>2</sub>O
+      <br>
+      y = x<sup>2</sup>
+    </div>
+  </comparison>
+</section>
+
+  <section>
+  <p>Non semantic <mark>Typography</mark> Elements</p>
+  <small>
+    <ul>
+      <li><mark>&lt;b&gt;&lt;/b&gt;</mark>: Renders text in bold without adding semantic meaning</li>
+      <li><mark>&lt;i&gt;&lt;/i&gt;</mark>: Renders text in italics without adding semantic meaning</li>
+      <li><mark>&lt;u&gt;&lt;/u&gt;</mark>: Renders text with an underline without adding semantic meaning</li>
+      <li><mark>&lt;s&gt;&lt;/s&gt;</mark>: Represents text with a strikethrough without adding semantic meaning</li>
+    </ul>
+  </small>
+</section>
+
+</section>
+
+<section>
+  <section>
+    <h4><mark>Embedded</mark> Elements (media)</h4>
+  </section>
+  <section>
+    <p balance="">
+      With HTML5 specifications released in 2014 semantics came into play introducing new elements that tells devs and browsers, as well as screen readers or search engines
+      <mark>exactly what the element itself does</mark> and <mark>what kind of content should contain</mark>.
+    </p>
+  </section>
+  <!-- <include src="./slides/topics/semantic-html/embedded/_embedded-canvas.html"></include> -->
+  <!-- <include src="./slides/topics/semantic-html/embedded/_embedded-iframe.html"></include> -->
+  <!-- <include src="./slides/topics/semantic-html/embedded/_embedded-embed.html"></include> -->
+  <!-- <include src="./slides/topics/semantic-html/embedded/_embedded-object.html"></include> -->
+  <section>
+  <small>
+    <p balance="">
+      <mark>&lt;audio&gt;&lt;/audio&gt;</mark>: Embeds audio content
+    </p>
+  </small>
+  <comparison>
+    <example code="" class="fragment">
+      <small>audio.html</small>
+      <pre>
+        <code class="language-html hljs" data-trim="" data-line-numbers="">
+          &lt;audio
+            controls&gt;
+            &lt;source
+              src="song.mp3"
+              type="audio/mpeg"&gt;
+            Your browser does not support the audio element.
+          &lt;/audio&gt;
+        </code>
+      </pre>
+    </example>
+    <small class="fragment">
+      <audio controls="">
+        <source src="ocean-breeze-beat-by-jtwayne-213318.a642cd39.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <br>
+      <small>
+        Music by
+        <a href="https://pixabay.com/users/jtwayne-40103628/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=213318">
+          JT WAYNE
+        </a>
+        from
+        <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=213318">
+          Pixabay
+        </a>
+      </small>
+    </small>
+  </comparison>
+</section>
+
+  <section>
+  <small>
+    <p balance="">
+      <mark>&lt;video&gt;&lt;/video&gt;</mark>: Embeds video content
+    </p>
+  </small>
+  <comparison>
+    <example code="" class="fragment">
+      <small>video.html</small>
+      <pre>
+        <code class="language-html hljs" data-trim="" data-line-numbers="">
+          &lt;video
+            controls 
+            width="640"
+            height="360"
+            poster="poster.jpg"&gt;
+            &lt;source
+              src="video.mp4"
+              type="video/mp4"&gt;
+            Your browser does not support the video element.
+          &lt;/video&gt;
+        </code>
+      </pre>
+    </example>
+    <small class="fragment">
+      <video controls="" width="640" height="360" poster="video-poster.7f9451b2.png">
+        <source src="video.c96ce60d.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </small>
+  </comparison>
+</section>
+
+  
+  <section>
+  <small>
+    <p balance="">
+      <mark>&lt;figure&gt;&lt;/figure&gt;</mark>: Groups self-contained content
+      with an optional caption
+    </p>
+  </small>
+  <comparison>
+    <example code="" class="fragment">
+      <small>figure.html</small>
+      <pre>
+        <code class="language-html hljs" data-trim="" data-line-numbers="">
+          &lt;figure&gt;
+            &lt;img
+              src="mountains.jpg"
+              alt="Scenic view of mountains"&gt;
+            &lt;figcaption&gt;
+              A scenic view of snowy mountains during sunset
+            &lt;/figcaption&gt;
+          &lt;/figure&gt;
+        </code>
+      </pre>
+    </example>
+    <small class="fragment">
+      <figure>
+        <img src="mountains.1c274411.jpg" alt="Scenic view of mountains">
+        <figcaption>
+          <small>A scenic view of snowy mountains during sunset.</small>
+        </figcaption>
+      </figure>
+    </small>
+  </comparison>
+</section>
+
+  <!-- <include
+    src="./slides/topics/semantic-html/embedded/_embedded-picture.html"
+  ></include> -->
+</section>
+
+<section user-input-elements="">
+  <section>
+    <h4><mark>User Input</mark> Elements</h4>
+  </section>
+  <section>
+  <small>
+    <p balance="">
+      <mark>&lt;button&gt;&lt;/button&gt;</mark>: Represents a clickable button
+      for user interaction. Used for actions like submitting forms, toggling
+      states, or triggering JavaScript events.
+    </p>
+  </small>
+</section>
+
+  <section>
+  <small>
+    <p balance="">
+      <mark>&lt;input /&gt;</mark>: Represents a field for user input. A
+      versatile element with various types of data.
+    </p>
+  </small>
+</section>
+<section>
+  <small>
+    <p balance="">
+      <mark>&lt;textarea&gt;&lt;/textarea&gt;</mark>: Represents a multi-line
+      text input field. Used for longer text inputs, such as comments or
+      descriptions.
+    </p>
+  </small>
+</section>
+
+  <section>
+  <small>
+    <p balance="">
+      <mark>&lt;select&gt;&lt;/select&gt;</mark>: Represents a dropdown menu
+      for selecting options. Used for single or multiple selections.
+    </p>
+    <br>
+    <p balance="" class="fragment">
+      <mark>&lt;option&gt;&lt;/option&gt;</mark>: Represents an item in a
+      dropdown list. Defines individual choices within a
+      <mark>&lt;select&gt;</mark>.
+    </p>
+    <br>
+    <p balance="" class="fragment">
+      <mark>&lt;optgroup&gt;&lt;/optgroup&gt;</mark>: Represents a grouping of
+      related <mark>&lt;option&gt;</mark> elements within a
+      <mark>&lt;select&gt;</mark> dropdown. Semantics: Used to create logical
+      groups of options, making large lists easier to navigate and understand
+      for users.
+    </p>
+  </small>
+</section>
+
+  <section>
+  <small>
+    <p balance="">
+      <mark>&lt;label&gt;&lt;/label&gt;</mark>: Describes a form
+      <mark>&lt;input&gt;</mark> or <mark>&lt;select&gt;</mark> or
+      <mark>&lt;textarea&gt;</mark>, linking it to its corresponding field.
+      Enhances form accessibility by associating a description with an input.
+    </p>
+  </small>
+</section>
+
+  <section>
+  <small>
+    <p balance="">
+      <mark>&lt;details&gt;&lt;/details&gt;</mark>: Represents a disclosure
+      widget, allowing users to expand and collapse content. Used for hiding
+      additional information until needed.
+    </p>
+    <br>
+    <p balance="" class="fragment">
+      <mark>&lt;summary&gt;&lt;/summary&gt;</mark>: Represents a summary or
+      label for the <mark>&lt;details&gt;</mark> element. The clickable part
+      of a disclosure widget.
+    </p>
+  </small>
+</section>
+
+  <section>
+  <small>
+    <p balance="">
+      <mark>&lt;form&gt;&lt;/form&gt;</mark>: Is a container for collecting user
+      input and submitting it to a server or handling it via client-side
+      JavaScript. It represents a section of a document intended for interactive
+      controls to submit data.
+    </p>
+    <br>
+    <p balance="" class="fragment">
+      <mark>&lt;fieldset&gt;&lt;/fieldset&gt;</mark>: Groups related form
+      elements visually and semantically. Used to organize complex forms.
+    </p>
+    <br>
+    <p balance="" class="fragment">
+      <mark>&lt;legend&gt;&lt;/legend&gt;</mark>: Provides a caption for the
+      <mark>&lt;fieldset&gt;</mark> element. Improves accessibility and form
+      clarity.
+    </p>
+  </small>
+</section>
+
+  <section>
+  <small>
+    <p>Here's a full form example</p>
+    <comparison>
+      <example code="">
+        <pre>
+          <code class="language-html hljs" data-trim="" data-line-numbers="">
+            &lt;form action="/" method="POST"&gt;
+              &lt;fieldset&gt;
+                &lt;legend&gt;Authentication&lt;/legend&gt;
+                &lt;label&gt;
+                  Username
+                  &lt;input
+                    name="username"
+                    type="text"
+                    placeholder="Insert your username"
+                    required
+                  /&gt;
+                &lt;/label&gt;
+                &lt;label&gt;
+                  Password
+                  &lt;input
+                    name="password"
+                    type="password"
+                    placeholder="Insert your password"
+                    required
+                  /&gt;
+                &lt;/label&gt;
+              &lt;/fieldset&gt;
+              &lt;details&gt;
+                &lt;summary&gt;Click here to open optional fields&lt;/summary&gt;
+                &lt;fieldset&gt;
+                  &lt;legend&gt;Optional fields&lt;/legend&gt;
+                  &lt;label&gt;
+                    Diet
+                    &lt;select name="food"&gt;
+                      &lt;optgroup label="Fruits"&gt;
+                        &lt;option value="apple"&gt;Apple&lt;/option&gt;
+                        &lt;option value="banana"&gt;Banana&lt;/option&gt;
+                        &lt;option value="orange"&gt;Orange&lt;/option&gt;
+                      &lt;/optgroup&gt;
+                      &lt;optgroup label="Vegetables" disabled&gt;
+                        &lt;option value="carrot"&gt;Carrot&lt;/option&gt;
+                        &lt;option value="broccoli"&gt;Broccoli&lt;/option&gt;
+                        &lt;option value="spinach"&gt;Spinach&lt;/option&gt;
+                      &lt;/optgroup&gt;
+                      &lt;optgroup label="Meat"&gt;
+                        &lt;option value="cow"&gt;Cow&lt;/option&gt;
+                        &lt;option value="pork"&gt;Pork&lt;/option&gt;
+                        &lt;option value="chicken"&gt;Chicken&lt;/option&gt;
+                      &lt;/optgroup&gt;
+                    &lt;/select&gt;
+                  &lt;/label&gt;
+                  &lt;label&gt;
+                    Connection
+                    &lt;select name="connection"&gt;
+                      &lt;option value="5G"&gt;5G&lt;/option&gt;
+                      &lt;option value="4G"&gt;4G&lt;/option&gt;
+                      &lt;option value="3G"&gt;
+                        3G (Grazia, Graziella e... Giorgio)
+                      &lt;/option&gt;
+                    &lt;/select&gt;
+                  &lt;/label&gt;
+                  &lt;label&gt;
+                    Describe yourself
+                    &lt;textarea
+                      name="description"
+                      placeholder="Describe yourself here..."
+                    &gt;&lt;/textarea&gt;
+                  &lt;/label&gt;
+                &lt;/fieldset&gt;
+              &lt;/details&gt;
+              &lt;label&gt;
+                &lt;input name="remember-me" type="checkbox" /&gt; Remember me
+              &lt;/label&gt;
+              &lt;button type="submit"&gt;Login&lt;/button&gt;
+            &lt;/form&gt;
+          </code>
+        </pre>
+      </example>
+      <small>
+        <form action="/" method="POST">
+          <fieldset>
+            <legend>Authentication</legend>
+            <label>
+              Username
+              <input name="username" type="text" placeholder="Insert your username" required="">
+            </label>
+            <label>
+              Password
+              <input name="password" type="password" placeholder="Insert your password" required="">
+            </label>
+          </fieldset>
+          <details>
+            <summary>Click here to open optional fields</summary>
+            <fieldset>
+              <legend>Optional fields</legend>
+              <label>
+                Diet
+                <select name="food">
+                  <optgroup label="Fruits">
+                    <option value="apple">Apple</option>
+                    <option value="banana">Banana</option>
+                    <option value="orange">Orange</option>
+                  </optgroup>
+                  <optgroup label="Vegetables" disabled="">
+                    <option value="carrot">Carrot</option>
+                    <option value="broccoli">Broccoli</option>
+                    <option value="spinach">Spinach</option>
+                  </optgroup>
+                  <optgroup label="Meat">
+                    <option value="cow">Cow</option>
+                    <option value="pork">Pork</option>
+                    <option value="chicken">Chicken</option>
+                  </optgroup>
+                </select>
+              </label>
+              <label>
+                Connection
+                <select name="connection">
+                  <option value="5G">5G</option>
+                  <option value="4G">4G</option>
+                  <option value="3G">
+                    3G (Grazia, Graziella e... Giorgio)
+                  </option>
+                </select>
+              </label>
+              <label>
+                Describe yourself
+                <textarea name="description" placeholder="Describe yourself here..."></textarea>
+              </label>
+            </fieldset>
+          </details>
+          <label>
+            <input name="remember-me" type="checkbox"> Remember me
+          </label>
+          <button type="submit">Login</button>
+        </form>
+      </small>
+    </comparison>
+  </small>
+</section>
+
+  <section>
+  <small>
+    <p balance="">
+      <mark>&lt;dialog&gt;&lt;/dialog&gt;</mark>: Represents a dialog box or
+      modal window. Used for popups, alerts, or forms requiring focused user
+      interaction.
+    </p>
+  </small>
+  <comparison>
+    <example code="">
+      <pre>
+        <code class="language-html hljs" data-trim="" data-line-numbers="">
+          &lt;button id="openDialog"&gt;Open Dialog&lt;/button&gt;
+          &lt;dialog id="myDialog"&gt;
+            &lt;h2&gt;Dialog Title&lt;/h2&gt;
+            &lt;p&gt;
+              This is a modal dialog. You can use it for alerts, confirmations, or
+              any other interaction.
+            &lt;/p&gt;
+            &lt;form method="dialog"&gt;
+              &lt;button type="submit" class="close-btn"&gt;Close&lt;/button&gt;
+            &lt;/form&gt;
+          &lt;/dialog&gt;
+          &lt;script&gt;
+            const dialog = document.getElementById('myDialog');
+            const openButton = document.getElementById('openDialog');
+  
+            openButton.addEventListener('click', () =&gt; {
+              dialog.showModal(); // Open the dialog as a modal
+            });
+  
+            dialog.addEventListener('close', () =&gt; {
+              console.log('Dialog closed with:', dialog.returnValue);
+            });
+          &lt;/script&gt;
+        </code>
+      </pre>
+    </example>
+    <small>
+      <button id="openDialog">Open Dialog</button>
+      <dialog id="myDialog">
+        <h2>Dialog Title</h2>
+        <p>
+          This is a modal dialog. You can use it for alerts, confirmations, or
+          any other interaction.
+        </p>
+        <form method="dialog">
+          <button type="submit" class="close-btn">Close</button>
+        </form>
+      </dialog>
+      <script>const dialog = document.getElementById('myDialog');
+const openButton = document.getElementById('openDialog');
+openButton.addEventListener('click', ()=>{
+    dialog.showModal(); // Open the dialog as a modal
+});
+dialog.addEventListener('close', ()=>{
+    console.log('Dialog closed with:', dialog.returnValue);
+});
+
+</script>
+    </small>
+  </comparison>
+</section>
+
+  <style>[user-input-elements] {
+  & form {
+    flex-flow: column;
+    place-content: center;
+    place-items: center;
+    gap: 1.5rem;
+    display: flex;
+
+    & :where(fieldset, details, label, input:not([type="checkbox"]), select, textarea) {
+      inline-size: -webkit-fill-available;
+    }
+
+    & fieldset {
+      border: 1px solid #fff;
+      flex-flow: column;
+      place-content: center;
+      place-items: center;
+      display: flex;
+    }
+
+    & label {
+      flex-flow: column;
+      place-content: start;
+      place-items: start;
+      gap: .3rem;
+      padding: .5rem;
+      display: flex;
+
+      &:has([type="checkbox"]) {
+        flex-direction: row;
+      }
+    }
+  }
+
+  & dialog {
+    color: canvas;
+    background-color: canvastext;
+  }
+}
+</style>
+
+</section>
+
+<section>
+  <small>
+    <blockquote balance="">
+      <mark>Semantics enhances</mark> accessibility, searchability, SEO, localization, and interoperability. <br><br>
+      So, if there's a native element which does what you need: please don't reinvent the wheel, try to find a way to <mark>use and style</mark> native semantic HTML elements.
+    </blockquote>
+  </small>
+</section>
+<!-- <section>
+  <h4><mark>Give</mark>away</h4>
+  <p balance>Accessibility is a <mark>continuous work in progress</mark>, keep yourself up to date: <mark>make learning a habit</mark>!</p>
+</section> -->
+
+
+
+    <section>
+  <section>
+    <h4>Accessibility Tooling</h4>
+    <small>
+      <ul>
+        <li>axe DevTools</li>
+        <li>Lighthouse (Chrome)</li>
+        <li>NVDA (Windows)</li>
+        <li>VoiceOver (macOS/iOS)</li>
+        <li>Orca (Linux)</li>
+      </ul>
+    </small>
+  </section>
+  <section>
+    <h4>Accessibility Checklist</h4>
+    <small>
+      <ul>
+        <li class="fragment">Use semantic HTML whenever possible</li>
+        <li class="fragment">Use WAI-ARIA only when absolutely necessary</li>
+        <li class="fragment">Check and ensure the proper focus and reading order</li>
+        <li class="fragment">Test Keyboard-only navigation (TAB, ENTER, ESC)</li>
+        <li class="fragment">Whenever possible do human tests</li>
+      </ul>
+    </small>
+  </section>
+  <section>
+    <h3>Final Thoughts</h3>
+  </section>
+  <section>
+    <p balance="">Accessibility is <mark>not optional</mark>. It reflects quality, responsibility and respect.</p>
+  </section>
+  <section>
+    <p balance="">Every technical decision is also an <mark>ethical decision</mark>. Writing accessible code makes the web better... <mark>for everyone</mark>.</p>
+  </section>
+  <section>
+    <p balance="">Accessibility is a <mark>continuous work in progress</mark>, keep yourself up to date: <mark>make learning a habit</mark>!</p>
+  </section>
+</section>
+
+<section data-transition="convex">
+<section links="" data-transition="convex">
+  <h4>Slides</h4>
+  <figure>
+    <picture>
+      <source srcset="slides.ad0930fa.webp" type="image/webp">
+      <img src="slides.23acc015.png" alt="Slides on Github Pages">
+    </picture>
+  </figure>
+</section>
+<section links="" data-transition="convex">
+  <h4>Slides Repo</h4>
+  <figure>
+    <picture>
+      <source srcset="slides-repo.ddc89ed8.webp" type="image/webp">
+      <img src="slides-repo.718832dd.png" alt="Slides Repo on Github">
+    </picture>
+  </figure>
 </section>
 
   <section class="slide-outro-taf" data-transition="convex">
   <!-- <div sr-only data-menu-title>That's All Folks</div> -->
-  <audio data-autoplay="" src="/taf.d3b3531a.mp3"></audio>
+  <audio data-autoplay="" src="taf.f9b512b9.mp3"></audio>
   <div class="taf-wrapper">
     <div class="circles">
       <div class="circle one"></div>
@@ -248,8 +1521,8 @@
   <section data-transition="convex">
   <figure pixu="">
     <picture>
-      <source srcset="/pixu.8dc4bcd7.webp" type="image/webp">
-      <img src="/pixu.8cd71433.jpg" alt="Pixu">
+      <source srcset="pixu.ea6d4c65.webp" type="image/webp">
+      <img src="pixu.06482de6.jpg" alt="Pixu">
     </picture>
   </figure>
   <h2>Grazie ❤️!</h2>
@@ -260,6 +1533,6 @@
   </div>
 </div>
 
-    <script src="/talk-template.c6396971.js" type="module"></script>
+    <script src="semantic-accessible-web.c80a2078.js" type="module"></script>
   </body>
 </html>

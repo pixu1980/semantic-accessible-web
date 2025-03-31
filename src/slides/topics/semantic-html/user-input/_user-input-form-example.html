@@ -1,0 +1,155 @@
+<section>
+  <small>
+    <p>Here's a full form example</p>
+    <comparison>
+      <example code>
+        <pre>
+          <code class="language-html hljs" data-trim data-line-numbers>
+            &lt;form action="/" method="POST"&gt;
+              &lt;fieldset&gt;
+                &lt;legend&gt;Authentication&lt;/legend&gt;
+                &lt;label&gt;
+                  Username
+                  &lt;input
+                    name="username"
+                    type="text"
+                    placeholder="Insert your username"
+                    required
+                  /&gt;
+                &lt;/label&gt;
+                &lt;label&gt;
+                  Password
+                  &lt;input
+                    name="password"
+                    type="password"
+                    placeholder="Insert your password"
+                    required
+                  /&gt;
+                &lt;/label&gt;
+              &lt;/fieldset&gt;
+              &lt;details&gt;
+                &lt;summary&gt;Click here to open optional fields&lt;/summary&gt;
+                &lt;fieldset&gt;
+                  &lt;legend&gt;Optional fields&lt;/legend&gt;
+                  &lt;label&gt;
+                    Diet
+                    &lt;select name="food"&gt;
+                      &lt;optgroup label="Fruits"&gt;
+                        &lt;option value="apple"&gt;Apple&lt;/option&gt;
+                        &lt;option value="banana"&gt;Banana&lt;/option&gt;
+                        &lt;option value="orange"&gt;Orange&lt;/option&gt;
+                      &lt;/optgroup&gt;
+                      &lt;optgroup label="Vegetables" disabled&gt;
+                        &lt;option value="carrot"&gt;Carrot&lt;/option&gt;
+                        &lt;option value="broccoli"&gt;Broccoli&lt;/option&gt;
+                        &lt;option value="spinach"&gt;Spinach&lt;/option&gt;
+                      &lt;/optgroup&gt;
+                      &lt;optgroup label="Meat"&gt;
+                        &lt;option value="cow"&gt;Cow&lt;/option&gt;
+                        &lt;option value="pork"&gt;Pork&lt;/option&gt;
+                        &lt;option value="chicken"&gt;Chicken&lt;/option&gt;
+                      &lt;/optgroup&gt;
+                    &lt;/select&gt;
+                  &lt;/label&gt;
+                  &lt;label&gt;
+                    Connection
+                    &lt;select name="connection"&gt;
+                      &lt;option value="5G"&gt;5G&lt;/option&gt;
+                      &lt;option value="4G"&gt;4G&lt;/option&gt;
+                      &lt;option value="3G"&gt;
+                        3G (Grazia, Graziella e... Giorgio)
+                      &lt;/option&gt;
+                    &lt;/select&gt;
+                  &lt;/label&gt;
+                  &lt;label&gt;
+                    Describe yourself
+                    &lt;textarea
+                      name="description"
+                      placeholder="Describe yourself here..."
+                    &gt;&lt;/textarea&gt;
+                  &lt;/label&gt;
+                &lt;/fieldset&gt;
+              &lt;/details&gt;
+              &lt;label&gt;
+                &lt;input name="remember-me" type="checkbox" /&gt; Remember me
+              &lt;/label&gt;
+              &lt;button type="submit"&gt;Login&lt;/button&gt;
+            &lt;/form&gt;
+          </code>
+        </pre>
+      </example>
+      <small>
+        <form action="/" method="POST">
+          <fieldset>
+            <legend>Authentication</legend>
+            <label>
+              Username
+              <input
+                name="username"
+                type="text"
+                placeholder="Insert your username"
+                required
+              />
+            </label>
+            <label>
+              Password
+              <input
+                name="password"
+                type="password"
+                placeholder="Insert your password"
+                required
+              />
+            </label>
+          </fieldset>
+          <details>
+            <summary>Click here to open optional fields</summary>
+            <fieldset>
+              <legend>Optional fields</legend>
+              <label>
+                Diet
+                <select name="food">
+                  <optgroup label="Fruits">
+                    <option value="apple">Apple</option>
+                    <option value="banana">Banana</option>
+                    <option value="orange">Orange</option>
+                  </optgroup>
+                  <optgroup label="Vegetables" disabled>
+                    <option value="carrot">Carrot</option>
+                    <option value="broccoli">Broccoli</option>
+                    <option value="spinach">Spinach</option>
+                  </optgroup>
+                  <optgroup label="Meat">
+                    <option value="cow">Cow</option>
+                    <option value="pork">Pork</option>
+                    <option value="chicken">Chicken</option>
+                  </optgroup>
+                </select>
+              </label>
+              <label>
+                Connection
+                <select name="connection">
+                  <option value="5G">5G</option>
+                  <option value="4G">4G</option>
+                  <option value="3G">
+                    3G (Grazia, Graziella e... Giorgio)
+                  </option>
+                </select>
+              </label>
+              <label>
+                Describe yourself
+                <textarea
+                  name="description"
+                  placeholder="Describe yourself here..."
+                ></textarea>
+              </label>
+            </fieldset>
+          </details>
+          <label>
+            <input name="remember-me" type="checkbox" /> Remember me
+          </label>
+          <button type="submit">Login</button>
+        </form>
+      </small>
+    </comparison>
+  </small>
+</section>

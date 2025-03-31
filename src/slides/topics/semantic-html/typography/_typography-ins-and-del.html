@@ -1,0 +1,36 @@
+<section>
+  <small>
+    <p balance>
+      <mark>&lt;ins&gt;&lt;/ins&gt;</mark>: Represents text that has been
+      inserted into a document. The <mark>datetime</mark> attribute can be used
+      to specify the date and time of the insertion.
+    </p>
+    <br>
+    <p balance class="fragment">
+      <mark>&lt;del&gt;&lt;/del&gt;</mark>: Represents text that has been
+      deleted from a document. The <mark>datetime</mark> attribute can also be
+      used here to specify when the text was removed.
+    </p>
+  </small>
+  <comparison>
+    <example code class="fragment">
+      <small>ins-and-del.html</small>
+      <pre>
+        <code class="language-html hljs" data-trim data-line-numbers>
+          &lt;p&gt;
+            The price is 
+            &lt;del datetime="2025-01-15"&gt;$50&lt;/del&gt;
+            &lt;ins datetime="2025-01-16"&gt;$40&lt;/ins&gt;
+          &lt;/p&gt;
+        </code>
+      </pre>
+    </example>
+    <small class="fragment">
+      <p>
+        The price is
+        <del datetime="2025-01-15">$50</del>
+        <ins datetime="2025-01-16">$40</ins>
+      </p>
+    </small>
+  </comparison>
+</section>

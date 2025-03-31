@@ -1,0 +1,37 @@
+<section>
+  <small>
+    <p balance>
+      <mark>&lt;video&gt;&lt;/video&gt;</mark>: Embeds video content
+    </p>
+  </small>
+  <comparison>
+    <example code class="fragment">
+      <small>video.html</small>
+      <pre>
+        <code class="language-html hljs" data-trim data-line-numbers>
+          &lt;video
+            controls 
+            width="640"
+            height="360"
+            poster="poster.jpg"&gt;
+            &lt;source
+              src="video.mp4"
+              type="video/mp4"&gt;
+            Your browser does not support the video element.
+          &lt;/video&gt;
+        </code>
+      </pre>
+    </example>
+    <small class="fragment">
+      <video
+        controls
+        width="640"
+        height="360"
+        poster="./assets/video/video-poster.png"
+      >
+        <source src="./assets/video/video.mp4" type="video/mp4" />
+        Your browser does not support the video element.
+      </video>
+    </small>
+  </comparison>
+</section>

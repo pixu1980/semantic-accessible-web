@@ -10,8 +10,8 @@
 @import './_typography.css' layer(talk);
 @import './_code.css' layer(talk);
 @import './_comparison.css' layer(talk);
+@import './_examples.css' layer(talk);
 @import './_pixu.css' layer(talk);
 @import './intro/index.css' layer(talk);
 /* here goes the style of the talk slides */
 @import './outro/index.css' layer(talk);
-

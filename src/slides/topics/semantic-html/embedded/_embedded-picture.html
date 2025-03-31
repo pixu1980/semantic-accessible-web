@@ -1,0 +1,63 @@
+<section>
+  <small>
+    <p balance>
+      <mark>&lt;picture&gt;&lt;/picture&gt;</mark>: Offers responsive image
+      capabilities, in this example we will demonstrate the 3G Principle
+    </p>
+  </small>
+  <comparison>
+    <example code class="fragment">
+      <small>picture.html</small>
+      <pre>
+        <code class="language-html hljs" data-trim data-line-numbers>
+          &lt;figure&gt;
+            &lt;picture&gt;
+              &lt;source srcset="giorgio.webp"
+                type="image/webp" /&gt;
+              &lt;source srcset="giorgio.png"
+                type="image/png" /&gt;
+              &lt;img src="giorgio.jpg"
+                alt="A responsive Giorgio image" /&gt;
+            &lt;/picture&gt;
+            &lt;img src="angular-logo.png"
+              alt="" /&gt;
+          &lt;/figure&gt;
+        </code>
+      </pre>
+    </example>
+    <small flex="column center">
+      <!-- <figure giorgio class="fragment">
+        <picture>
+          <source srcset="./assets/giorgio.jpg?as=webp" type="image/webp" />
+          <source srcset="./assets/giorgio.jpg?as=png" type="image/png" />
+          <img
+            src="./assets/giorgio.jpg"
+            width="300"
+            height="300"
+            alt="A responsive Giorgio image"
+          />
+        </picture>
+        <img src="./assets/angular-logo.png" width="50" alt="" />
+        <figcaption class="fragment">
+          Grazia, Graziella e... Giorgio!
+        </figcaption>
+      </figure> -->
+      <!-- <style>
+        [giorgio] {
+          position: relative;
+          width: 30rem;
+          aspect-ratio: 1;
+
+          > img {
+            position: absolute;
+            inset: auto 0 0 auto;
+          }
+
+          figcaption {
+            position: absolute;
+          }
+        }
+      </style> -->
+    </small>
+  </comparison>
+</section>

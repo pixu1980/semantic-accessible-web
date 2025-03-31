@@ -14,15 +14,22 @@
   }
 
   mark {
-    display: inline-block;
+    display: inline;
     vertical-align: baseline;
   }
 
-  blockquote {
-    text-wrap: balance;
+  .present {
+    [balance] {
+      text-wrap: balance;
+    }
   }
 
-  section > :where(h1, h2, h3, h4, h5, h6, p, blockquote, q) {
-    text-wrap: balance;
+  [note] {
+    color: var(--color--gray-400);
+    font-size: .75em;
   }
+
+  /* section > :where(h1, h2, h3, h4, h5, h6, p, blockquote, q) {
+    text-wrap: balance;
+  } */
 }
