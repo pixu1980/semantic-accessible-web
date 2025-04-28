@@ -2,6 +2,7 @@
   "name": "talk-template",
   "version": "0.0.3",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "clear:cache": "rm -rf .parcel-cache",
     "clear:dist": "rm -rf dist",
@@ -15,7 +16,13 @@
     "rel:minor": "yarn build && yarn version --minor && yarn rel:push",
     "rel:patch": "yarn build && yarn version --patch && yarn rel:push"
   },
+  "workspaces": [
+    "../talks-libraries/packages/*"
+  ],
   "dependencies": {
+    "@pixu-talks/core": "0.1.6",
+    "@pixu-talks/fonts": "0.1.6",
+    "@pixu-talks/theme": "0.1.6",
     "reveal.js": "5.2.1"
   },
   "devDependencies": {
